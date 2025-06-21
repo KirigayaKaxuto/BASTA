@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Satisfy&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFF8FA;
+}
+
+.logo-text {
+    font-family: 'Satisfy', cursive;
+    background: linear-gradient(
+        135deg,
+        #FFD6E0 0%,
+        #FFEFB8 25%,
+        #D1F0C2 50%,
+        #C5E7F7 75%,
+        #E9D1F8 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-button {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.nav-button:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: currentColor;
+    transition: width 0.3s ease;
+}
+
+.nav-button:hover:after {
+    width: 100%;
+}
+
+.pastel-gradient {
+    background: linear-gradient(
+        135deg,
+        #FFD6E0 0%,
+        #FFEFB8 25%,
+        #D1F0C2 50%,
+        #C5E7F7 75%,
+        #E9D1F8 100%
+    );
+}
+
+.form-input:focus {
+    border-color: transparent;
+    box-shadow: 0 0 0 2px rgba(233, 209, 248, 0.5);
+}
+
+.login-card {
+    animation: fadeIn 0.6s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.btn-hover-effect {
+    transition: all 0.3s ease;
+}
+
+.btn-hover-effect:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}

@@ -1,4 +1,4 @@
-const { HashRouter, Routes, Route, Link } = ReactRouterDOM;
+const { HashRouter, Routes, Route } = ReactRouterDOM;
 
 function App() {
   return (
@@ -10,6 +10,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
+        <Route path="/recipe/:id" element={<RecipeDetail />} />
       </Routes>
     </HashRouter>
   );
